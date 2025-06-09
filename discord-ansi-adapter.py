@@ -205,6 +205,6 @@ for chunk in chunks:
                 print(f"invalid sequence number string: {sequence_number_str}")
     new_numbers = process_sequence_numbers(sequence_numbers)
     new_numbers_str = [str(x) for x in new_numbers]
-    message_chunks.append(f"\033[{";".join(new_numbers_str)}m")
+    message_chunks.append(f"\033[{';'.join(new_numbers_str)}m")
 
 print("".join(message_chunks))
